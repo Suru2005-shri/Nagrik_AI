@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ayushman-bharat",
+    "name": "Ayushman Bharat - PMJAY",
+    "category": "Health",
+    "department": "National Health Authority",
+    "summary": "Health insurance cover of up to Rs. 5 lakh per family per year for secondary and tertiary hospitalisation.",
+    "eligibility": "Families identified under SECC 2011 deprivation criteria; state-specific extensions in some states.",
+    "documents": ["Aadhaar card", "Ration card / family ID", "Income certificate (if applicable)", "Recent passport-size photo"],
+    "apply_url": "https://pmjay.gov.in"
+  },
+  {
+    "id": "pmay",
+    "name": "Pradhan Mantri Awas Yojana (Urban)",
+    "category": "Housing",
+    "department": "Ministry of Housing and Urban Affairs",
+    "summary": "Interest subsidy and financial assistance for construction or purchase of a first home.",
+    "eligibility": "Families with no pucca house in India, income-based EWS/LIG/MIG categories.",
+    "documents": ["Aadhaar card", "Income certificate", "Property/land documents", "Bank account details"],
+    "apply_url": "https://pmaymis.gov.in"
+  },
+  {
+    "id": "ujjwala",
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "category": "Welfare",
+    "department": "Ministry of Petroleum and Natural Gas",
+    "summary": "Free LPG connection to women from BPL households.",
+    "eligibility": "Adult woman from a BPL household without an existing LPG connection.",
+    "documents": ["Aadhaar card", "BPL ration card", "Bank account (Jan Dhan preferred)", "Passport-size photo"],
+    "apply_url": "https://pmuy.gov.in"
+  },
+  {
+    "id": "pm-kisan",
+    "name": "PM-KISAN",
+    "category": "Agriculture",
+    "department": "Ministry of Agriculture & Farmers Welfare",
+    "summary": "Income support of Rs. 6,000 per year to eligible farmer families, paid in three instalments.",
+    "eligibility": "Small and marginal farmer families with cultivable landholding, subject to exclusion criteria.",
+    "documents": ["Aadhaar card", "Land ownership records", "Bank account details"],
+    "apply_url": "https://pmkisan.gov.in"
+  },
+  {
+    "id": "bescom-new-connection",
+    "name": "BESCOM New Electricity Connection",
+    "category": "Utilities",
+    "department": "BESCOM (Bengaluru Electricity Supply Company)",
+    "summary": "Apply for a new residential or commercial electricity connection in Bengaluru.",
+    "eligibility": "Property owner or tenant with valid occupancy proof within BESCOM jurisdiction.",
+    "documents": ["Aadhaar card", "Property tax paid receipt / khata", "Address proof", "Passport-size photo", "NOC from owner (if tenant)"],
+    "apply_url": "https://bescom.karnataka.gov.in"
+  },
+  {
+    "id": "bbmp-khata",
+    "name": "BBMP Khata Registration / Transfer",
+    "category": "Municipal",
+    "department": "Bruhat Bengaluru Mahanagara Palike",
+    "summary": "Register or transfer property khata records for tax and legal ownership purposes.",
+    "eligibility": "Property owner within BBMP limits.",
+    "documents": ["Sale deed", "Previous khata certificate", "Property tax receipts", "Aadhaar card", "Encumbrance certificate"],
+    "apply_url": "https://bbmp.gov.in"
+  },
+  {
+    "id": "ration-card",
+    "name": "New Ration Card Application",
+    "category": "Welfare",
+    "department": "Department of Food, Civil Supplies and Consumer Affairs",
+    "summary": "Apply for a new ration card to access subsidised food grains through the PDS.",
+    "eligibility": "Resident household without an existing ration card.",
+    "documents": ["Aadhaar card of all family members", "Address proof", "Income certificate", "Passport-size photos"],
+    "apply_url": "https://ahara.kar.nic.in"
+  },
+  {
+    "id": "driving-licence",
+    "name": "Driving Licence (Learner's + Permanent)",
+    "category": "Transport",
+    "department": "Regional Transport Office (RTO)",
+    "summary": "Apply for a learner's licence followed by a permanent driving licence via the Sarathi portal.",
+    "eligibility": "Minimum age 18 for gear vehicles (16 with guardian consent for non-gear under 50cc).",
+    "documents": ["Aadhaar card", "Address proof", "Age proof", "Passport-size photos", "Medical certificate (Form 1A, for transport licences)"],
+    "apply_url": "https://parivahan.gov.in"
+  },
+  {
+    "id": "income-certificate",
+    "name": "Income Certificate",
+    "category": "Certificates",
+    "department": "Revenue Department",
+    "summary": "Official proof of annual family income, required for most welfare scheme applications.",
+    "eligibility": "Any resident; issued by the local Tahsildar or via e-District portal.",
+    "documents": ["Aadhaar card", "Address proof", "Salary slip / self-declaration of income", "Ration card"],
+    "apply_url": "https://edistrict.karnataka.gov.in"
+  },
+  {
+    "id": "caste-certificate",
+    "name": "Caste Certificate",
+    "category": "Certificates",
+    "department": "Revenue Department",
+    "summary": "Proof of caste category required for reservations in education, jobs, and welfare schemes.",
+    "eligibility": "Resident belonging to SC/ST/OBC category as per state list.",
+    "documents": ["Aadhaar card", "Address proof", "Parent's caste certificate (if available)", "Ration card"],
+    "apply_url": "https://edistrict.karnataka.gov.in"
+  },
+  {
+    "id": "water-connection",
+    "name": "BWSSB Water Connection",
+    "category": "Utilities",
+    "department": "Bangalore Water Supply and Sewerage Board",
+    "summary": "Apply for a new domestic or commercial water and sewerage connection in Bengaluru.",
+    "eligibility": "Property owner within BWSSB service area.",
+    "documents": ["Property tax receipt / khata", "Aadhaar card", "Site plan", "NOC from owner (if tenant)"],
+    "apply_url": "https://bwssb.karnataka.gov.in"
+  },
+  {
+    "id": "voter-id",
+    "name": "Voter ID Registration",
+    "category": "Civic",
+    "department": "Election Commission of India",
+    "summary": "Register as a new voter or update existing voter ID details via the National Voters' Service Portal.",
+    "eligibility": "Indian citizen aged 18 or above, ordinarily resident at the given address.",
+    "documents": ["Aadhaar card", "Address proof", "Passport-size photo", "Age proof"],
+    "apply_url": "https://voters.eci.gov.in"
+  }
+]
