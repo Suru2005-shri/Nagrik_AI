@@ -202,9 +202,11 @@ deterministic answers from `schemes.json`).
 
 *(Railway or Fly.io work identically — same three settings.)*
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/report.jpg" width="700">
-  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/output1.jpg" width="700">
-  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/dash1.jpg" width="700">
+  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/report.jpg" width="450">
+  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/output1.jpg" width="450">
+  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/dash1.jpg" width="450">
+
+  
 </p>
 ---
 
