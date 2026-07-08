@@ -1,0 +1,7 @@
+node_modules/
+frontend/dist/
+frontend/.tanstack/
+backend/__pycache__/
+backend/smart_bharat.db
+backend/.env
+.DS_Store

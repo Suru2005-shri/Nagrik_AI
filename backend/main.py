@@ -1,4 +1,5 @@
 import uuid
+from pathlib import Path
 from typing import Optional
 
 from fastapi import FastAPI, Depends, HTTPException
@@ -145,9 +146,34 @@ def all_schemes():
 
 
 # ---------- Serve frontend ----------
-app.mount("/static", StaticFiles(directory="../frontend"), name="static")
+# The frontend is a Vite/React app; it must be *built* first
+# (`cd frontend && npm install && npm run build`), which produces
+# frontend/dist/. We serve that build here, not the raw TSX source
+# (browsers can't execute .tsx directly, which was the original break
+# between frontend and backend).
+FRONTEND_DIST = Path(__file__).resolve().parent.parent / "frontend" / "dist"
 
+if FRONTEND_DIST.exists():
+    app.mount("/assets", StaticFiles(directory=FRONTEND_DIST / "assets"), name="assets")
 
-@app.get("/")
-def serve_index():
-    return FileResponse("../frontend/index.html")
+    @app.get("/{full_path:path}")
+    def serve_frontend(full_path: str):
+        # Let API routes 404 normally instead of falling through to the SPA.
+        if full_path.startswith("api/"):
+            raise HTTPException(404, "Not found")
+        candidate = FRONTEND_DIST / full_path
+        if full_path and candidate.is_file():
+            return FileResponse(candidate)
+        # SPA fallback: any other path (client-side routes, refreshes) gets
+        # index.html so TanStack Router can take over.
+        return FileResponse(FRONTEND_DIST / "index.html")
+else:
+
+    @app.get("/")
+    def frontend_not_built():
+        return {
+            "detail": (
+                "Frontend build not found. Run `cd frontend && npm install "
+                "&& npm run build`, then restart the backend."
+            )
+        }
