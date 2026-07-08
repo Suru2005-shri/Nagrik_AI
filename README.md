@@ -8,6 +8,10 @@ Hindi, or Kannada.
 Built for the **Smart Bharat: AI-Powered Civic Companion** challenge (Build. Learn. Lead. Impact.)
 <p align="center">
   <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/find_service.jpg" width="700">
+  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/track.jpg" width="700">
+
+
+
   
 </p>
 ---
