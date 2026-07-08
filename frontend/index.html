@@ -1,137 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Smart Bharat — Civic Companion</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Hind:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/static/style.css" />
-</head>
-<body>
-  <div class="desk">
-    <div class="ledger">
-
-      <header class="masthead">
-        <div class="mark">
-          <svg class="seal-logo" viewBox="0 0 64 64" aria-hidden="true">
-            <circle cx="32" cy="32" r="29" fill="none" stroke="currentColor" stroke-width="1.4"/>
-            <circle cx="32" cy="32" r="23" fill="none" stroke="currentColor" stroke-width="1"/>
-            <text x="32" y="38" text-anchor="middle" class="seal-logo-text">SB</text>
-          </svg>
-          <div class="mark-text">
-            <span class="mark-title">Smart Bharat</span>
-            <span class="mark-sub">Civic Ledger &amp; AI Companion</span>
-          </div>
-        </div>
-        <select id="lang" class="lang-select" aria-label="Response language">
-          <option value="English">English</option>
-          <option value="Hindi">हिन्दी</option>
-          <option value="Kannada">ಕನ್ನಡ</option>
-        </select>
-      </header>
-
-      <nav class="tabs" id="tabs">
-        <button class="tab active" data-tab="chat"><span class="tab-code">Sec. 1</span>Companion</button>
-        <button class="tab" data-tab="report"><span class="tab-code">Sec. 2</span>Report an Issue</button>
-        <button class="tab" data-tab="track"><span class="tab-code">Sec. 3</span>Track a Complaint</button>
-        <button class="tab" data-tab="services"><span class="tab-code">Sec. 4</span>Find a Service</button>
-      </nav>
-
-      <main class="stage">
-
-        <!-- CHAT -->
-        <section class="panel active" id="panel-chat">
-          <div class="panel-intro">
-            <span class="eyebrow">Register Entry · Sec. 1</span>
-            <h1>Ask Nagrik</h1>
-            <p>Your civic companion for schemes, certificates, and everyday government questions. Answers are grounded in the local services register — nothing invented.</p>
-          </div>
-          <div class="chat-window" id="chatWindow">
-            <div class="msg msg-bot">
-              <span class="msg-label"><span class="msg-dot"></span>Nagrik</span>
-              <p>Namaste. Ask me about a scheme, a certificate, or which documents you need — I'll answer in the language you pick above.</p>
-            </div>
-          </div>
-          <form id="chatForm" class="chat-input-row">
-            <input id="chatInput" type="text" placeholder="e.g. What documents do I need for a ration card?" autocomplete="off" />
-            <button type="submit"><span>Ask</span></button>
-          </form>
-        </section>
-
-        <!-- REPORT -->
-        <section class="panel" id="panel-report">
-          <div class="panel-intro">
-            <span class="eyebrow">Grievance Register · Sec. 2</span>
-            <h1>Report a Civic Issue</h1>
-            <p>Every report is stamped with a ledger reference and routed to the responsible department.</p>
-          </div>
-          <form id="reportForm" class="form-grid">
-            <label>Your name
-              <input name="name" required placeholder="Full name" />
-            </label>
-            <label>Category
-              <select name="category" required>
-                <option value="roads">Roads &amp; potholes</option>
-                <option value="water">Water supply</option>
-                <option value="electricity">Electricity</option>
-                <option value="garbage">Garbage collection</option>
-                <option value="streetlight">Streetlight</option>
-                <option value="drainage">Drainage</option>
-                <option value="other">Other</option>
-              </select>
-            </label>
-            <label>Location
-              <input name="location" placeholder="Area, ward or landmark" required />
-            </label>
-            <label class="full">Description
-              <textarea name="description" rows="4" placeholder="Describe the issue" required></textarea>
-            </label>
-            <button type="submit" class="full"><span>Submit Report</span></button>
-          </form>
-          <div id="reportResult" class="result-card hidden"></div>
-        </section>
-
-        <!-- TRACK -->
-        <section class="panel" id="panel-track">
-          <div class="panel-intro">
-            <span class="eyebrow">Status Lookup · Sec. 3</span>
-            <h1>Track a Complaint</h1>
-            <p>Enter the ledger reference number you received when you filed a report.</p>
-          </div>
-          <form id="trackForm" class="track-row">
-            <input id="ticketInput" placeholder="SB-2026-XXXXXX" required />
-            <button type="submit"><span>Track</span></button>
-          </form>
-          <div id="trackResult" class="result-card hidden"></div>
-        </section>
-
-        <!-- SERVICES -->
-        <section class="panel" id="panel-services">
-          <div class="panel-intro">
-            <span class="eyebrow">Scheme Finder · Sec. 4</span>
-            <h1>Find a Service</h1>
-            <p>Describe your situation in plain words — the companion matches it to relevant schemes and certificates.</p>
-          </div>
-          <form id="serviceForm" class="track-row">
-            <input id="serviceInput" placeholder="e.g. I need help with electricity connection for my new house" required />
-            <button type="submit"><span>Search</span></button>
-          </form>
-          <div id="serviceResults" class="service-results">
-            <div class="empty-state">Search results will be entered here.</div>
-          </div>
-        </section>
-
-      </main>
-
-      <footer class="foot">
-        <span>Built for the Smart Bharat challenge</span>
-        <span class="foot-dot">·</span>
-        <span>Build. Learn. Lead. Impact.</span>
-      </footer>
-    </div>
-  </div>
-  <script src="/static/app.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nagrik AI — Civic Companion for Smart Bharat</title>
+    <meta
+      name="description"
+      content="Ask civic questions, report issues, track complaints, and find government services — grounded in the local services register."
+    />
+    <meta property="og:title" content="Nagrik AI — Civic Companion" />
+    <meta
+      property="og:description"
+      content="Your AI companion for schemes, certificates, and civic issues across India."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
