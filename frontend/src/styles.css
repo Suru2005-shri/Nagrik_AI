@@ -1,0 +1,126 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Nagrik AI — civic companion design system.
+ * Warm sandstone on deep ink. Editorial serif + humanist sans + mono stamps.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-ring-offset-background: var(--background);
+
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-paper: var(--paper);
+  --color-sandstone: var(--sandstone);
+  --color-sandstone-bright: var(--sandstone-bright);
+  --color-ok: var(--ok);
+
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* Palette */
+  --ink: oklch(0.18 0.03 265);
+  --ink-2: oklch(0.22 0.03 265);
+  --ink-3: oklch(0.27 0.035 265);
+  --paper: oklch(0.93 0.02 80);
+  --sandstone: oklch(0.66 0.14 45);
+  --sandstone-bright: oklch(0.74 0.14 55);
+  --ok: oklch(0.70 0.10 155);
+
+  /* Semantic mapping */
+  --background: var(--ink);
+  --foreground: var(--paper);
+  --card: var(--ink-2);
+  --card-foreground: var(--paper);
+  --popover: var(--ink-2);
+  --popover-foreground: var(--paper);
+  --primary: var(--sandstone);
+  --primary-foreground: oklch(0.15 0.02 265);
+  --secondary: var(--ink-3);
+  --secondary-foreground: var(--paper);
+  --muted: var(--ink-3);
+  --muted-foreground: oklch(0.72 0.02 80);
+  --accent: var(--ink-3);
+  --accent-foreground: var(--sandstone-bright);
+  --destructive: oklch(0.62 0.20 25);
+  --destructive-foreground: var(--paper);
+  --border: oklch(0.93 0.02 80 / 0.14);
+  --input: oklch(0.93 0.02 80 / 0.14);
+  --ring: var(--sandstone);
+
+  /* Shadows & gradients */
+  --shadow-soft: 0 1px 0 oklch(0.93 0.02 80 / 0.05) inset, 0 20px 40px -20px oklch(0 0 0 / 0.5);
+  --gradient-warm: linear-gradient(135deg, var(--sandstone) 0%, var(--sandstone-bright) 100%);
+  --gradient-stage:
+    radial-gradient(1200px 600px at 85% -10%, oklch(0.66 0.14 45 / 0.10), transparent 60%),
+    radial-gradient(900px 500px at -10% 20%, oklch(0.40 0.10 260 / 0.30), transparent 55%);
+}
+
+.dark {
+  /* Design is dark-first; .dark inherits :root. */
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image: var(--gradient-stage);
+    background-attachment: fixed;
+  }
+
+  ::selection { background: var(--sandstone); color: var(--ink); }
+
+  .font-display { font-family: var(--font-display); }
+  .font-mono { font-family: var(--font-mono); }
+}
+
+@utility stamp {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sandstone-bright);
+}
+
+@utility hairline {
+  border: 1px solid var(--color-border);
+}
