@@ -7,8 +7,8 @@ Hindi, or Kannada.
 
 Built for the **Smart Bharat: AI-Powered Civic Companion** challenge (Build. Learn. Lead. Impact.)
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/dash1.jpg" width="500">
-  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/output1.jpg" width="500">
+  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/dash1.jpg" width="400">
+  <img src="https://raw.githubusercontent.com/Suru2005-shri/Nagrik_AI/main/images/output1.jpg" width="400">
   
 </p>
 ---
