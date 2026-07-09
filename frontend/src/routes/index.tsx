@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
 // In production, the built frontend is served by FastAPI itself, so a
 // relative path is correct there too. Override with VITE_API_BASE if you
 // ever host the API on a different origin.
-const API_BASE = import.meta.env.VITE_API_URL ?? "";
+const API_BASE = import.meta.env.VITE_API_BASE ?? "";
 
 type TabId = "chat" | "report" | "track" | "services";
 
